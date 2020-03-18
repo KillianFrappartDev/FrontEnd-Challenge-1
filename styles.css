@@ -11,9 +11,6 @@ body {
 
 .title {
     text-align: center; 
-}
-
-.title p {
     padding: 0 90px;
 }
 
@@ -30,7 +27,8 @@ body {
     margin: 35px auto;
     border-radius: 8px;
     border-top: 4px solid hsl(180, 62%, 55%);
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background-color: #FFF;
 }
 
 .card:hover {
@@ -70,12 +68,49 @@ img {
 
 /* DESKTOP */
 
-@media (min-width: 501px) {
+@media (min-width: 800px) {
     body {
-      
     }
 
     .container {
-        
+        position: relative;
+        width: 1300px;
+        height: 800px;
+        margin: 100px auto;
     }
+
+    .title {
+        /* position: absolute;
+        top: 40px; */
+        padding: 0 30%;
+    }
+
+    .card {
+        position: absolute;
+    }
+
+    .cyan {
+        top: 50%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+    }
+
+    .red {
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .orange {
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .blue {
+        top: 50%;
+        right: 20%;
+        transform: translate(50%, -50%);
+    }
+
 }
